@@ -1,0 +1,8 @@
+<h2>List of heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let curHero of heroes">
+    <a routerLink="/detail/{{curHero.id}}">
+      <span class="badge">{{curHero.id}}</span>{{curHero.name}}
+    </a>
+  </li>
+</ul>
